@@ -104,7 +104,7 @@ body {
 }
 
 #landing_body {
-  width: 65%;
+  width: 75%;
   margin: 80px auto;
 }
 
@@ -115,7 +115,7 @@ h1 {
 }
 
 #landing_body > h1 {
-  width: 80%;
+  width: 85%;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.56);
 }
 
@@ -135,12 +135,18 @@ h1 {
   padding-left: 10px;
   font-size: 16px;
   color: rgb(118, 118, 118);
+  padding-top: 5px;
 }
 
 #landing_select > div:first-child,
 #landing_select > div:nth-child(2) {
   border-right: 1px solid #eee;
   padding: 20px 15px 17px;
+}
+
+#landing_select > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
 }
 
 #landing_select > div:first-child {
