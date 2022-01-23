@@ -1,0 +1,144 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style>
+                 .container{
+                    border:1px solid grey ;
+                    width: 25%;
+                    border-radius: 5px;
+                    margin: auto;
+                    padding: 20px;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                    padding: 20px;
+                }
+                .container>input{
+                    width: 100%;
+                    border: 0px;
+                    border-bottom: 1px solid black;
+                    margin: 10px 0px;
+                    padding:5px ;
+                    font-size: 20px;
+                }
+                #signin{
+                    text-align: center;
+                }
+                #signin>button{
+                    width: 60%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 0px;
+                    background-color: #6731cf;
+                    color:white;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                .container>h1{
+                    text-align: center;
+                }
+                .container>label{
+                    font-size: 20px;
+                }
+                .end{
+    width: 100%;
+    /* border: 1px solid gray; */
+    height: 400px;
+    margin-top: 70px;
+    display: flex;
+    font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    color:  #6f6f72 ;
+    background-color:#f4f4f4;
+}
+.end h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.end p:hover{
+    color: black;
+}
+.e1{
+    padding-left: 240px;
+}
+.e2,.e3{
+    padding-left: 60px;
+}
+
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>SignIn</h1>
+            <label>Email Address :</label>
+            <input type="email" id="mail">
+            <br>
+            <label>Password :</label>
+            <input type="password" id="pass">
+            <br>
+            <div  id="signin">
+                <button onclick="signin()">SignIn</button>
+            </div>
+
+        </div>
+        
+<div class="end">
+    <div class="e1">
+        <h3>HOMETOGO </h3>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Investors</p>
+        <p>HomeToGo Stock</p>
+        <p>App</p>
+        <p>Insight</p>
+        <p>Press</p>
+        <p>Inspiration</p>
+        <img class="e11" src="https://www.hometogo.com/assets/logo/logo-color.svg"
+        width="60" height="30">
+    </div>
+    <div  class="e2">
+        <h3>CONTACT</h3>
+        <p>Press</p>
+        <p>Help Centre and Contact</p>
+        <p>Become a Parnter</p>
+        <p>Sign-Up as a Host</p>
+    </div>
+    <div  class="e3">
+        <h3>PRIVACY & TERMS</h3>
+        <p>Terms of Serivce</p>
+        <p>Privacy Policy</p>
+        <p>Legal</p>
+    </div>
+</div>
+
+        </body>
+        </html>
+        <script>
+
+var registerUser=JSON.parse(localStorage.getItem("userDatabase"));
+
+function signin() {
+    console.log("here")
+        let email=document.getElementById("mail").value;
+        // let name=document.getElementById("name").value;
+
+        let pass=document.getElementById("pass").value;
+
+  for(var i =0 ; i<registerUser.length ; i++){
+ console.log(registerUser[i])
+  if(registerUser[i].emailAdd===email && registerUser[i].password===pass){
+    alert("login successful")
+    window.location.href ="index.html"
+
+}
+
+ }
+
+
+
+
+}
+        </script>

@@ -41,6 +41,7 @@ document.querySelector("#end_date").addEventListener("change", () => {
     document.querySelector("#end_date_value").textContent = document.querySelector("#end_date").value;
 });
 
+
 let searchValue = JSON.parse(localStorage.getItem("search_value"));
 if(searchValue) {
     document.querySelector("#start_date_value").textContent = searchValue.startDate;

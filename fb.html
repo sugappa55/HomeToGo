@@ -1,0 +1,168 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style>
+                .container{
+                    border: 2px solid rgb(216, 216, 216);
+                    border-radius: 8px;
+                    margin: auto;
+                    width: 25%;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                    padding: 20px;
+                }
+                #login{
+                    width: 85%;
+                    padding: 6px;
+                    margin: 25px 25px 20px 25px;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    border:0px;
+                    background-color: rgb(103, 49,206);
+                    color: white;
+                }
+                .container>a{
+                margin: 40px 40px;
+                }
+                #center{
+                    padding: 20px;
+                }
+                #btn1{
+                    background-color: rgb(66, 103, 178);
+                    color: white;
+                    width: 95%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    border: 0px;
+                    font-size: 15px;
+                }
+                #btn2{
+                    width: 95%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    border: 0px;
+                    font-size: 15px;
+                }
+                #privacy{
+                    font-size: 22px;
+                }
+                #logo>img{
+                    width: 60%;
+                    height:100px;
+                }
+                #logo{
+                    text-align: center;
+                }
+                .end{
+    width: 100%;
+    /* border: 1px solid gray; */
+    height: 400px;
+    margin-top: 70px;
+    display: flex;
+    font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    color:  #6f6f72 ;
+    background-color:#f4f4f4;
+}
+.end h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.end p:hover{
+    color: black;
+}
+.e1{
+    padding-left: 240px;
+}
+.e2,.e3{
+    padding-left: 60px;
+}
+
+
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div id="logo"><img src="https://www.logolynx.com/images/logolynx/f2/f27fe25237510d42e5837ae6c0ebd748.png" alt=""></div>
+                <button id="login">Log in</button>
+                <!-- <a href="login.html"></a> -->
+                <br>
+              <a href="signup.html">Create New Account</a>
+              <br>
+              
+              <table><tr>
+                <td style="width:48%"><hr/></td>
+                <td style="vertical-align:middle; text-align: center">OR</td>
+                <td style="width:48%"><hr/></td>
+                </tr></table>
+                <div id="center">
+           
+                    <button id="btn1">Continue with Facebook</button>
+                    <br>
+                    <button id="btn2">Continue with Google</button>
+               <br>
+                <div id="email">
+                    <br>
+                   </div>
+    
+    
+                <input type="checkbox" id="acc">
+                <label for="accept">I wish to receive exclusive deals sent right to my inbox</label>
+                <div id="privacy"><h6>By signing up, you agree to our ToS. You can find more information in our Privacy Policy.</h6></div>
+    
+            </div>
+            </div>
+            
+<div class="end">
+    <div class="e1">
+        <h3>HOMETOGO </h3>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Investors</p>
+        <p>HomeToGo Stock</p>
+        <p>App</p>
+        <p>Insight</p>
+        <p>Press</p>
+        <p>Inspiration</p>
+        <img class="e11" src="https://www.hometogo.com/assets/logo/logo-color.svg"
+        width="60" height="30"">
+    </div>
+    <div  class="e2">
+        <h3>CONTACT</h3>
+        <p>Press</p>
+        <p>Help Centre and Contact</p>
+        <p>Become a Parnter</p>
+        <p>Sign-Up as a Host</p>
+    </div>
+    <div  class="e3">
+        <h3>PRIVACY & TERMS</h3>
+        <p>Terms of Serivce</p>
+        <p>Privacy Policy</p>
+        <p>Legal</p>
+    </div>
+</div>
+
+        </body>
+        </html>
+        <script>
+         document.querySelector("#btn1").addEventListener("click", fb);
+            function fb(){
+
+                window.location.href="https://www.facebook.com"
+
+            }
+         document.querySelector("#btn2").addEventListener("click",gg);
+          function gg(){
+              window.location.href="https://accounts.google.com/o/oauth2/auth/identifier?response_type=code&access_type=online&client_id=36294019585-8n55c3il2b2nhj6t297ff23l4u0v47rl.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.hometogo.com%2Faccount%2Fcallback%2Fgoogle%2F&state=a9ad87fe96fb009dd4612606624ebc10290ed6c48201c44913eed3320f79150d&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&approval_prompt=force&flowName=GeneralOAuthFlow";
+          }
+            document.querySelector("#login").addEventListener('click',logIn)
+            function logIn(){
+                window.location.href="sigin.html";
+            }
+        </script>
