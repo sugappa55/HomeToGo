@@ -161,8 +161,8 @@ function date(event,value){
 date_count++
  if(date_count>=2){
 //console.log(current_date >= +(date1[3]+date1[4]));
-if(  (current_date <= +(date1[3]+date1[4]))&&  (+(date1[3]+date1[4]) < +(date2[3]+date2[4])) && ( (+(date2[3]+date2[4]))-(+(date1[3]+date1[4])) >=1)){
-alert("dates set")
+if(  ((current_date <= +(date1[3]+date1[4]))|| +(date1[0]+date1[1])== +(date2[0]+date2[1]))&&  (+(date1[3]+date1[4]) < +(date2[3]+date2[4])) && ( (+(date2[3]+date2[4]))-(+(date1[3]+date1[4])) >=1)){
+  alert("dates set")
 console.log(current_date,  +(date1[3]+date1[4]), +(date2[3]+date2[4]))
 date_set=true
 
